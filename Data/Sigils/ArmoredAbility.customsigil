@@ -1,0 +1,20 @@
+{
+    "$id": 0,
+    "$type": "0|StarCraftCore.Scripts.Data.Sigils.ArmoredAbilityData, StarCraftCore",
+    "power": 0,
+    "priority": 0,
+    "learnText": "A near impenetrable defense.",
+    "ruleBookName": "Armored",
+    "ruleDescription": "All attacks this creature receives are reduced by 1 damage.",
+    "iconPath": "Artwork/Sigils/armored.png",
+    "metaCategories": {
+        "$id": 1,
+        "$type": "1|System.Collections.Generic.List`1[[DiskCardGame.AbilityMetaCategory, Assembly-CSharp]], mscorlib",
+        "$rlength": 2,
+        "$rcontent": [
+            0,
+            1
+        ]
+    },
+    "damageBlocked": 1
+}

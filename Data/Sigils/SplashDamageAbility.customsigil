@@ -1,0 +1,19 @@
+{
+    "$id": 0,
+    "$type": "0|StarCraftCore.Scripts.Data.Sigils.AbilityData, StarCraftCore",
+    "power": 6,
+    "priority": 100,
+    "learnText": "They shouldn’t have stood so close to each other.",
+    "ruleBookName": "Splash Damage",
+    "ruleDescription": "Whenever a card bearing this sigil attacks, the damage will also apply to the creatures adjacent to the target.",
+    "iconPath": "Artwork/Sigils/splash_damage.png",
+    "metaCategories": {
+        "$id": 1,
+        "$type": "1|System.Collections.Generic.List`1[[DiskCardGame.AbilityMetaCategory, Assembly-CSharp]], mscorlib",
+        "$rlength": 2,
+        "$rcontent": [
+            0,
+            1
+        ]
+    }
+}

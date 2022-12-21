@@ -1,0 +1,19 @@
+{
+    "$id": 0,
+    "$type": "0|StarCraftCore.Scripts.Data.Sigils.AbilityData, StarCraftCore",
+    "power": 0,
+    "priority": 1000000,
+    "learnText": "None can hide from it’s piercing gaze.",
+    "ruleBookName": "Detector",
+    "ruleDescription": "As long as a card bearing this sigil is on the board, all Waterborne creatures are revealed and can be attacked as normal.",
+    "iconPath": "Artwork/Sigils/detector.png",
+    "metaCategories": {
+        "$id": 1,
+        "$type": "1|System.Collections.Generic.List`1[[DiskCardGame.AbilityMetaCategory, Assembly-CSharp]], mscorlib",
+        "$rlength": 2,
+        "$rcontent": [
+            0,
+            1
+        ]
+    }
+}

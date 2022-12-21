@@ -1,0 +1,19 @@
+{
+    "$id": 0,
+    "$type": "0|StarCraftCore.Scripts.Data.Sigils.AbilityData, StarCraftCore",
+    "power": 0,
+    "priority": 0,
+    "learnText": "Nowhere is far enough away.",
+    "ruleBookName": "Abduct",
+    "ruleDescription": "Whenever a card bearing this sigil is played, you may move any enemy creature to the nearest empty space.",
+    "iconPath": "Artwork/Sigils/abduct.png",
+    "metaCategories": {
+        "$id": 1,
+        "$type": "1|System.Collections.Generic.List`1[[DiskCardGame.AbilityMetaCategory, Assembly-CSharp]], mscorlib",
+        "$rlength": 2,
+        "$rcontent": [
+            0,
+            1
+        ]
+    }
+}

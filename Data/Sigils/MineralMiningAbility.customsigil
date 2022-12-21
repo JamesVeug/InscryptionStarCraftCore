@@ -1,0 +1,19 @@
+{
+    "$id": 0,
+    "$type": "0|StarCraftCore.Scripts.Data.Sigils.AbilityData, StarCraftCore",
+    "power": 9,
+    "priority": 0,
+    "learnText": "",
+    "ruleBookName": "Mineral Mining",
+    "ruleDescription": "When a card being this sigil is attacked, the attacker generates 1 bone.",
+    "iconPath": "Artwork/Sigils/MineralMining.png",
+    "metaCategories": {
+        "$id": 1,
+        "$type": "1|System.Collections.Generic.List`1[[DiskCardGame.AbilityMetaCategory, Assembly-CSharp]], mscorlib",
+        "$rlength": 2,
+        "$rcontent": [
+            0,
+            1
+        ]
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "$id": 0,
+    "$type": "0|StarCraftCore.Scripts.Data.Sigils.SwarmAbilityData, StarCraftCore",
+    "power": 5,
+    "priority": 0,
+    "learnText": "True power comes in numbers",
+    "ruleBookName": "Swarm",
+    "ruleDescription": "When an card adjacent to a card bearing this sigil attacks another card and survives, this card will also attack the same card.",
+    "iconPath": "Artwork/Sigils/swarm.png",
+	"pixelIconPath": "Artwork/Sigils/Pixel/pixelability_swarm.png",
+    "metaCategories": {
+        "$id": 1,
+        "$type": "1|System.Collections.Generic.List`1[[DiskCardGame.AbilityMetaCategory, Assembly-CSharp]], mscorlib",
+        "$rlength": 2,
+        "$rcontent": [
+            0,
+            1
+        ]
+    }
+}

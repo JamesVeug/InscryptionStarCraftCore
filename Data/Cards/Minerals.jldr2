@@ -1,0 +1,15 @@
+{
+	"name": "JSON_Minerals",
+	"modPrefix": "StarCraftCore",
+	"decals": ["JamesGames-StarCraftCore/Artwork/watermark.png"],
+	"displayedName": "Minerals",
+	"baseAttack": 0,
+	"baseHealth": 4,
+	"abilities": ["jamesgames.inscryption.starcraftcore.Mineral Mining", "MadeOfStone"],
+	"cardComplexity": "Vanilla",
+	"temple": "Nature",
+	"description": "A forest of Spine and Spore crawlers designed to defend you",
+	"appearanceBehaviour": ["TerrainBackground", "TerrainLayout"],
+	"texture": "JamesGames-StarCraftCore/Artwork/Cards/portrait_minerals.png",
+	"traits": ["Terrain", "Structure"]
+}

@@ -1,0 +1,20 @@
+{
+    "$id": 0,
+    "$type": "0|StarCraftCore.Scripts.Data.Sigils.RicochetAbilityData, StarCraftCore",
+    "power": 0,
+    "priority": 0,
+    "learnText": "",
+    "ruleBookName": "Ricochet",
+    "ruleDescription": "When a card bearing this sigil deals damage to a creature, it will also deal 1 flying damage.",
+    "iconPath": "Artwork/Sigils/ricochet.png",
+    "metaCategories": {
+        "$id": 1,
+        "$type": "1|System.Collections.Generic.List`1[[DiskCardGame.AbilityMetaCategory, Assembly-CSharp]], mscorlib",
+        "$rlength": 2,
+        "$rcontent": [
+            0,
+            1
+        ]
+    },
+    "ricochetDamage": 1
+}

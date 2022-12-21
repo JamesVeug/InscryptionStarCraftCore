@@ -1,0 +1,19 @@
+{
+    "$id": 0,
+    "$type": "0|StarCraftCore.Scripts.Data.Sigils.AbilityData, StarCraftCore",
+    "power": 0,
+    "priority": 0,
+    "learnText": "Offensive and Defensive options",
+    "ruleBookName": "Blink",
+    "ruleDescription": "At the end of your turn, a card bearing this sigil can move to a targeted empty slot.",
+    "iconPath": "Artwork/Sigils/blink.png",
+    "metaCategories": {
+        "$id": 1,
+        "$type": "1|System.Collections.Generic.List`1[[DiskCardGame.AbilityMetaCategory, Assembly-CSharp]], mscorlib",
+        "$rlength": 2,
+        "$rcontent": [
+            0,
+            1
+        ]
+    }
+}

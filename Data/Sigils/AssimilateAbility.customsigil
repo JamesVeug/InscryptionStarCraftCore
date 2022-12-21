@@ -1,0 +1,20 @@
+{
+    "$id": 0,
+    "$type": "0|StarCraftCore.Scripts.Data.Sigils.AssimilateAbilityData, StarCraftCore",
+    "power": 0,
+    "priority": 7,
+    "learnText": "Nowhere is far enough away.",
+    "ruleBookName": "Assimilate",
+    "ruleDescription": "When a card bearing this Sigil kills another card it, the killer will Evolve.",
+    "iconPath": "Artwork/Sigils/assimilate.png",
+    "pixelIconPath": "Artwork/Sigils/Pixel/pixelability_assimilate.png",
+    "metaCategories": {
+        "$id": 1,
+        "$type": "1|System.Collections.Generic.List`1[[DiskCardGame.AbilityMetaCategory, Assembly-CSharp]], mscorlib",
+        "$rlength": 2,
+        "$rcontent": [
+            0,
+            1
+        ]
+    }
+}

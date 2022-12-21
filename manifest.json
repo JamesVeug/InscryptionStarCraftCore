@@ -1,0 +1,10 @@
+{
+    "name": "StarCraftCore",
+    "version_number": "1.1.1",
+    "website_url": "",
+    "description": "Adds common cards/abilities... etc used between StarCraft Mods",
+    "dependencies": [
+        "BepInEx-BepInExPack_Inscryption-5.4.1902",
+        "API_dev-API-2.7.0"
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "$id": 0,
+    "$type": "0|StarCraftCore.Scripts.Data.Sigils.AbilityData, StarCraftCore",
+    "power": 9,
+    "priority": 0,
+    "learnText": "Use that creature well.",
+    "ruleBookName": "Fish Hook",
+    "ruleDescription": "Whenever a card bearing this sigil is played, you may hook an opposing creature to your side of the board, if there is room.",
+    "iconPath": "Artwork/Sigils/fish_hook.png",
+    "metaCategories": {
+        "$id": 1,
+        "$type": "1|System.Collections.Generic.List`1[[DiskCardGame.AbilityMetaCategory, Assembly-CSharp]], mscorlib",
+        "$rlength": 2,
+        "$rcontent": [
+            0,
+            1
+        ]
+    }
+}

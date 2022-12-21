@@ -1,0 +1,21 @@
+{
+    "$id": 0,
+    "$type": "0|StarCraftCore.Scripts.Data.Sigils.RegenerateAbilityData, StarCraftCore",
+    "power": 0,
+    "priority": 0,
+    "learnText": "What powerful resilience...",
+    "ruleBookName": "Regenerate",
+    "ruleDescription": "At the start of your turn, a creature bearing this sigil will heal one health.",
+    "iconPath": "Artwork/Sigils/regenerate.png",
+	"pixelIconPath": "Artwork/Sigils/Pixel/pixelability_regenerate.png",
+    "metaCategories": {
+        "$id": 1,
+        "$type": "1|System.Collections.Generic.List`1[[DiskCardGame.AbilityMetaCategory, Assembly-CSharp]], mscorlib",
+        "$rlength": 2,
+        "$rcontent": [
+            0,
+            1
+        ]
+    },
+    "health": 1
+}

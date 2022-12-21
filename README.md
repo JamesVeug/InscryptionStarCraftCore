@@ -1,0 +1,79 @@
+# StarCraft Core
+Adds common cards/abilities... etc used between StarCraft Mods
+
+### Includes:
+
+<details>
+<summary>1 New Cards:
+</summary>
+
+|Name|Power|Health|Cost|Sigils|Traits|
+|:-|:-|:-|:-|:-|:-|
+|Minerals|0|4|Free|Mineral Mining, Made Of Stone|Terrain, Structure|
+</details>
+
+<details>
+<summary>14 New Sigils:
+</summary>
+
+|Name|Description|
+|:-|:-|
+|Abduct|Whenever a card bearing this sigil is played, you may move any enemy creature to the nearest empty space.|
+|Armored|All attacks this creature receives are reduced by 1 damage.|
+|Assimilate|When a card bearing this Sigil kills another card it, the killer will Evolve.|
+|Blink|At the end of your turn, a card bearing this sigil can move to a targeted empty slot.|
+|Blood Bank|Whenever a card bearing this sigil is sacrificed to summon another card, the cost is reduced from this creature’s current health.|
+|Detector|As long as a card bearing this sigil is on the board, all Waterborne creatures are revealed and can be attacked as normal.|
+|Explode|When a card bearing this sigil attacks, the damage is also applied to the creatures adjacent to the target. This creature then perishes.|
+|Fish Hook|Whenever a card bearing this sigil is played, you may hook an opposing creature to your side of the board, if there is room.|
+|Mineral Mining|When a card being this sigil is attacked, the attacker generates 1 bone.|
+|Regenerate|At the start of your turn, a creature bearing this sigil will heal one health.|
+|Ricochet|When a card bearing this sigil deals damage to a creature, it will also deal 1 flying damage.|
+|Splash Damage|Whenever a card bearing this sigil attacks, the damage will also apply to the creatures adjacent to the target.|
+|Swarm|When an card adjacent to a card bearing this sigil attacks another card and survives, this card will also attack the same card.|
+|Trinket Within|When a card bearing this sigil perishes, a random item is given to you.|
+</details>
+
+<details>
+<summary>1 New Regions:
+</summary>
+
+|Name|Tier|
+|:-|:-|
+|Char|0|
+</details>
+
+
+
+## Credits:
+- **JamesGames** - Creator
+- **GeneralSpritz** - Custom Art
+- **Shattered Omega** - Balancing
+- **Cyantist** - Armored Ability
+- **CarbotAnimations** - Original Cartoon art for StarCraft - https://www.youtube.com/c/CarbotAnimations
+
+# Update notes:
+
+## `Version: 1.1.1 - 22/12/2022`
+### Changes:
+- Char region has less props
+- Char region tree is a proper material and is bendy now
+- Added wait for Swarm to have follow up attack
+- Plus more
+
+## `Version: 1.1.0 - 6/11/2022`
+### Added:
+- New Char Region
+- New Challenge to always use be on Char
+- New Minerals Card for Char
+- New Mineral mining Ability
+- Pixel art for Regenerate
+- Pixel art for Assimilate
+- Pixel art for Swarm
+
+### Fixes:
+- Splash hurting friendly cards 
+
+
+## `Version: 1.0.0 - 4/9/2022`
+First release
