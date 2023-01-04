@@ -55,9 +55,11 @@ namespace StarCraftCore
         private void Start()
         {
 	        // Regions
+	        AuirRegion.Initialize();
 	        CharRegion.Initialize();
 	        
 	        // Challenges
+	        AuirRegionOnlyChallenge.Initialize();
 	        CharRegionOnlyChallenge.Initialize();
 		        
 	        Logger.LogInfo($"Loaded {PluginName}!");
