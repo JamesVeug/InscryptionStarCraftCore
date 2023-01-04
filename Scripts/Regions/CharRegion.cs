@@ -1,8 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.IO;
 using DiskCardGame;
+using InscryptionAPI.Dialogue;
 using InscryptionAPI.Helpers;
 using InscryptionAPI.Regions;
+using InscryptionAPI.Resource;
 using InscryptionAPI.Sound;
 using UnityEngine;
 
@@ -45,6 +47,9 @@ namespace StarCraftCore.Scripts.Regions
             {
                 Opponent.Type.ProspectorBoss, Opponent.Type.AnglerBoss, Opponent.Type.TrapperTraderBoss
             };
+
+            LoadGameObjects();
+            LoadDialogue();
         }
 
         private static List<ScarceSceneryEntry> GetScarceScenery()
@@ -190,17 +195,15 @@ namespace StarCraftCore.Scripts.Regions
                     gameObject.AddComponent<MapElement>();
                 }
 
-                ResourceBank.instance.resources.Add(new ResourceBank.Resource()
-                {
-                    path = "Prefabs/Map/MapScenery/" + RegionName + "/" + prefab,  // Prefabs/Map/MapScenery/Char/TreeA
-                    asset = gameObject,
-                });
+                ResourceBankManager.Add(Plugin.PluginGuid,
+                    path: "Prefabs/Map/MapScenery/" + RegionName + "/" + prefab,  // Prefabs/Map/MapScenery/Char/TreeA
+                    unityObject: gameObject);
             }
         }
 
-        public static DialogueEvent GetDialogue()
+        public static void LoadDialogue()
         {
-            return new DialogueEvent()
+            DialogueManager.Add(Plugin.PluginGuid, new DialogueEvent()
             {
                 id = "Region" + RegionName,
                 groupId = "Game Flow",
@@ -265,7 +268,7 @@ namespace StarCraftCore.Scripts.Regions
                         }
                     }
                 }
-            };
+            });
         }
     }
 }

@@ -1,10 +1,12 @@
 using BepInEx;
 using BepInEx.Logging;
 using HarmonyLib;
+using InscryptionAPI.Dialogue;
 using StarCraftCore.Scripts.Abilities;
 using StarCraftCore.Scripts.Backgrounds;
 using StarCraftCore.Scripts.Challenges;
 using StarCraftCore.Scripts.Regions;
+using UnityEngine;
 
 namespace StarCraftCore
 {
@@ -45,6 +47,9 @@ namespace StarCraftCore
             SwarmAbility.Initialize(typeof(SwarmAbility));
             MineralMiningAbility.Initialize(typeof(MineralMiningAbility));
 
+            // Dialogue Colors
+            DialogueManager.AddColor(PluginGuid, "purple", new Color(0.3f, 0, 0.7f));
+            DialogueManager.AddColor(PluginGuid, "light_green", new Color(0, 0.75f, 0));
         }
 
         private void Start()
