@@ -54,7 +54,7 @@ namespace StarCraftCore.Scripts.Abilities
 
         public override bool RespondsToOtherCardDealtDamage(PlayableCard attacker, int amount, PlayableCard target)
         {
-            if (target.Dead || attacker.Dead)
+            if (target.Dead || attacker.Dead || target.slot == null)
             {
                 return false;
             }
