@@ -35,12 +35,23 @@ Adds common cards/abilities... etc used between StarCraft Mods
 </details>
 
 <details>
-<summary>1 New Regions:
+<summary>2 New Ascension Challenges:
 </summary>
 
-|Name|Tier|
-|:-|:-|
-|Char|0|
+|Name|Points|Description|
+|:-|:-|:-|
+|My life for Auir|15|You're sent to Auir to defeat all bosses.|
+|Planet Char|15|You're forced to survive on planet Char|
+</details>
+
+<details>
+<summary>2 New Regions:
+</summary>
+
+|Name|Tier|Main Tribes|Opponents|Encounters|
+|:-|:-|:-|:-|:-|
+|Auir|0|Bird|ProspectorBoss,AnglerBoss,TrapperTraderBoss|BirdFlock,CoyotePack,WolfPack,PronghornJuggernaut,DireWolfJuggernaut,Protoss Dark Templar,Protoss Zealot Rush|
+|Char|0|Insect|ProspectorBoss,AnglerBoss,TrapperTraderBoss|Skinks,AntSwarm,Submerge,Bees,Reptiles,AntsAndTurtles,Zerg Air,Drone Rush,Swarm Host snipe,Ultralisk Rush,Zergling Swarm|
 </details>
 
 
@@ -53,6 +64,12 @@ Adds common cards/abilities... etc used between StarCraft Mods
 - **CarbotAnimations** - Original Cartoon art for StarCraft - https://www.youtube.com/c/CarbotAnimations
 
 # Update notes:
+
+## `Version: 1.2.0 - 04/01/2023`
+### Changes:
+- Added Aiur region
+- Fixed Swarm sigil breaking game when hitting a backlane card
+- Updated to API 2.8.1
 
 ## `Version: 1.1.1 - 22/12/2022`
 ### Changes:
