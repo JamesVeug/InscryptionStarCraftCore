@@ -62,6 +62,7 @@ Adds common cards/abilities... etc used between StarCraft Mods
 - **Shattered Omega** - Balancing
 - **Cyantist** - Armored Ability
 - **CarbotAnimations** - Original Cartoon art for StarCraft - https://www.youtube.com/c/CarbotAnimations
+- **Bonie** - Some props for Auir
 
 # Update notes:
 
