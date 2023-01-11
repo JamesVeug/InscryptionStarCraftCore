@@ -16,7 +16,7 @@ namespace StarCraftCore
     {
 	    public const string PluginGuid = "jamesgames.inscryption.starcraftcore";
 	    public const string PluginName = "StarCraft Core";
-	    public const string PluginVersion = "1.1.1.0";
+	    public const string PluginVersion = "1.3.0.0";
 
         public static string Directory;
         public static ManualLogSource Log;
@@ -46,6 +46,7 @@ namespace StarCraftCore
             SplashDamageAbility.Initialize(typeof(SplashDamageAbility));
             SwarmAbility.Initialize(typeof(SwarmAbility));
             MineralMiningAbility.Initialize(typeof(MineralMiningAbility));
+            HealingAbility.Initialize(typeof(HealingAbility));
 
             // Dialogue Colors
             DialogueManager.AddColor(PluginGuid, "purple", new Color(0.3f, 0, 0.7f));

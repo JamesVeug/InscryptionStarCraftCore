@@ -170,21 +170,16 @@ namespace StarCraftCore
         
         public static List<CardSlot> GetAdjacentSlots(CardSlot slot)
         {
-            int slotIndex = slot.Index;
-            List<CardSlot> allSlots = Singleton<BoardManager>.Instance.GetSlots(!slot.opposingSlot);
             List<CardSlot> slots = new List<CardSlot>();
-            for (int i = 0; i < allSlots.Count; i++)
+            CardSlot toLeft = Singleton<BoardManager>.Instance.GetAdjacent(slot, true);
+            CardSlot toRight = Singleton<BoardManager>.Instance.GetAdjacent(slot, false);
+            if (toLeft != null && toLeft.Card != null && !toLeft.Card.Dead && !toLeft.Card.FaceDown)
             {
-                CardSlot cardSlot = allSlots[i];
-                if (cardSlot == null || cardSlot.Card == null || cardSlot.Card.Dead || cardSlot.Card.FaceDown)
-                {
-                    continue;
-                }
-                
-                if (cardSlot.Index == slotIndex - 1 || cardSlot.Index == slotIndex + 1)
-                {
-                    slots.Add(cardSlot);
-                }
+                slots.Add(toLeft);
+            }
+            if (toRight != null && toRight.Card != null && !toRight.Card.Dead && !toRight.Card.FaceDown)
+            {
+                slots.Add(toRight);
             }
 
             return slots;

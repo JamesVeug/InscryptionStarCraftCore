@@ -13,7 +13,7 @@ Adds common cards/abilities... etc used between StarCraft Mods
 </details>
 
 <details>
-<summary>14 New Sigils:
+<summary>15 New Sigils:
 </summary>
 
 |Name|Description|
@@ -26,6 +26,7 @@ Adds common cards/abilities... etc used between StarCraft Mods
 |Detector|As long as a card bearing this sigil is on the board, all Waterborne creatures are revealed and can be attacked as normal.|
 |Explode|When a card bearing this sigil attacks, the damage is also applied to the creatures adjacent to the target. This creature then perishes.|
 |Fish Hook|Whenever a card bearing this sigil is played, you may hook an opposing creature to your side of the board, if there is room.|
+|Healing|At the start of your turn the card bearing this sigil will heal adjacent cards by one health.|
 |Mineral Mining|When a card being this sigil is attacked, the attacker generates 1 bone.|
 |Regenerate|At the start of your turn, a creature bearing this sigil will heal one health.|
 |Ricochet|When a card bearing this sigil deals damage to a creature, it will also deal 1 flying damage.|
@@ -56,6 +57,7 @@ Adds common cards/abilities... etc used between StarCraft Mods
 
 
 
+
 ## Credits:
 - **JamesGames** - Creator
 - **GeneralSpritz** - Custom Art
@@ -65,6 +67,13 @@ Adds common cards/abilities... etc used between StarCraft Mods
 - **Bonie** - Some props for Auir
 
 # Update notes:
+
+## `Version: 1.3.0 - 12/01/2023`
+### Added:
+- Added Healing Sigil
+
+<details>
+  <summary>See all Changes</summary>
 
 ## `Version: 1.2.0 - 04/01/2023`
 ### Changes:
@@ -95,3 +104,6 @@ Adds common cards/abilities... etc used between StarCraft Mods
 
 ## `Version: 1.0.0 - 4/9/2022`
 First release
+
+
+</details>

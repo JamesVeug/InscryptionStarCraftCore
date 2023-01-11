@@ -1,0 +1,20 @@
+{
+    "$id": 0,
+    "$type": "0|StarCraftCore.Scripts.Data.Sigils.HealingAbilityData, StarCraftCore",
+    "power": 0,
+    "priority": 0,
+    "learnText": "What powerful resilience...",
+    "ruleBookName": "Healing",
+    "ruleDescription": "At the start of your turn the card bearing this sigil will heal adjacent cards by one health.",
+    "iconPath": "Artwork/Sigils/healing.png",
+    "metaCategories": {
+        "$id": 1,
+        "$type": "1|System.Collections.Generic.List`1[[DiskCardGame.AbilityMetaCategory, Assembly-CSharp]], mscorlib",
+        "$rlength": 2,
+        "$rcontent": [
+            0,
+            1
+        ]
+    },
+    "health": 1
+}
