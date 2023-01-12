@@ -68,7 +68,7 @@ namespace StarCraftCore.Scripts.Regions
             gasGysers.data.minScale = new Vector2(0.55f, 0.55f);
             gasGysers.data.maxScale = new Vector2(0.85f, 0.85f);
             gasGysers.data.prefabNames = ConvertNames(GasGysers);
-            gasGysers.data.radius = 0.2f;
+            gasGysers.data.radius = 0.1f;
 
             // GemTower
             ScarceSceneryEntry gemTower = new ScarceSceneryEntry()
@@ -82,7 +82,7 @@ namespace StarCraftCore.Scripts.Regions
             gemTower.data.minScale = new Vector2(1.0f, 1.0f);
             gemTower.data.maxScale = new Vector2(1.5f, 1.5f);
             gemTower.data.prefabNames = ConvertNames(GemTowers);
-            gemTower.data.radius = 0.2f;
+            gemTower.data.radius = 0.1f;
             
             //entries.Add(trees);
             entries.Add(gasGysers);
@@ -144,6 +144,7 @@ namespace StarCraftCore.Scripts.Regions
                 GameObject gameObject = assetBundle.LoadAsset<GameObject>(prefab);
                 if (gameObject == null)
                 {
+                    Plugin.Log.LogError($"Could not load {RegionName} region prefab called {prefab}");
                     continue;
                 }
                 
