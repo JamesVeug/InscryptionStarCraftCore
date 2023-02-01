@@ -1,0 +1,19 @@
+{
+    "$id": 0,
+    "$type": "0|StarCraftCore.Scripts.Data.Sigils.DecayAbilityData, StarCraftCore",
+    "power": 0,
+    "priority": 0,
+    "learnText": "",
+    "ruleBookName": "Decay",
+    "ruleDescription": "At the end of the owners turn a card bearing this sigil will perish after the amount of turns listed",
+    "iconPath": "Artwork/Sigils/decay_3.png",
+    "metaCategories": {
+        "$id": 1,
+        "$type": "1|System.Collections.Generic.List`1[[DiskCardGame.AbilityMetaCategory, Assembly-CSharp]], mscorlib",
+        "$rlength": 2,
+        "$rcontent": [
+            0,
+            1
+        ]
+    }
+}

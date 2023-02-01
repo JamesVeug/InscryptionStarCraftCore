@@ -1,0 +1,21 @@
+{
+    "$id": 0,
+    "$type": "0|StarCraftCore.Scripts.Data.Sigils.StimpackAbilityData, StarCraftCore",
+    "power": 0,
+    "priority": 0,
+    "learnText": "The ultimate rush!",
+    "ruleBookName": "Stimpack",
+    "ruleDescription": "Activate this sigil to deal 1 damage to the card but gain 2 damage for a single turn",
+    "iconPath": "Artwork/Sigils/stimpack.png",
+    "metaCategories": {
+        "$id": 1,
+        "$type": "1|System.Collections.Generic.List`1[[DiskCardGame.AbilityMetaCategory, Assembly-CSharp]], mscorlib",
+        "$rlength": 2,
+        "$rcontent": [
+            0,
+            1
+        ]
+    },
+    "damage": 1,
+    "attackBoost": 2
+}
