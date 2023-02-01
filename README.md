@@ -68,6 +68,10 @@ Adds common cards/abilities... etc used between StarCraft Mods
 
 # Update notes:
 
+## `Version: 1.3.1 - 12/01/2023`
+### Fixes:
+- Fixed Auir causing soft lock with no props on the board
+
 ## `Version: 1.3.0 - 12/01/2023`
 ### Added:
 - Added Healing Sigil

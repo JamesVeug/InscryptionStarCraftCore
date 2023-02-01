@@ -1,6 +1,6 @@
 {
     "name": "StarCraftCore",
-    "version_number": "1.3.0",
+    "version_number": "1.3.1",
     "website_url": "",
     "description": "Adds common cards/abilities... etc used between StarCraft Mods",
     "dependencies": [
