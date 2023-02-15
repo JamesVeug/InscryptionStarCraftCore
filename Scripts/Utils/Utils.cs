@@ -23,7 +23,7 @@ namespace StarCraftCore
             s_dataLookup[declaringType] = loadedData;
 
             Texture2D texture = GetTextureFromPath(loadedData.iconPath, pluginDirectory);
-            newAbility = AbilityManager.New(pluginGUID, loadedData.ruleBookName, loadedData.ruleDescription, declaringType, texture);
+            newAbility = AbilityManager.New(pluginGUID, loadedData.ruleBookName, ParseDescription(loadedData.ruleDescription, loadedData), declaringType, texture);
             newAbility.powerLevel = loadedData.power;
             newAbility.metaCategories = loadedData.metaCategories;
             if (!string.IsNullOrEmpty(loadedData.pixelIconPath))
@@ -41,6 +41,18 @@ namespace StarCraftCore
                 newAbility.abilityLearnedDialogue = new DialogueEvent.LineSet(lines);
             }
             //Plugin.Log.LogInfo("Initialized Ability: " + loadedData.ruleBookName + " as " + newAbility.ability);
+        }
+
+        public static string ParseDescription<T>(string description, T t) where T : AbilityData
+        {
+            string s = description;
+            if (t is ActivatedAbilityData abilityData)
+            {
+                s = s.Replace("{boneCost}", abilityData.boneCost.ToString());
+                s = s.Replace("{energyCost}", abilityData.energyCost.ToString());
+            }
+
+            return s;
         }
         
         public static void InitializeSpecialAbility<T>(string pluginGUID, Type declaringType, string pluginDirectory, out T loadedData, out SpecialTriggeredAbilityManager.FullSpecialTriggeredAbility newSpecialAbility) 
