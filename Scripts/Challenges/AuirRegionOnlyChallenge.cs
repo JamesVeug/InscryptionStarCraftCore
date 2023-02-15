@@ -14,7 +14,7 @@ namespace StarCraftCore.Scripts.Challenges
 				Plugin.PluginGuid,
 				"My life for Auir",
 				"You're sent to Auir to defeat all bosses.",
-				15,
+				5,
 				StarCraftCore.Utils.GetTextureFromPath("Artwork/Challenges/ascensionicon_auir.png", Plugin.Directory),
 				StarCraftCore.Utils.GetTextureFromPath("Artwork/Challenges/ascensionicon_auir_activated.png", Plugin.Directory)
 			);

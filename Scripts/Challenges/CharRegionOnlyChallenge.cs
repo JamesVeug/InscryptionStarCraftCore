@@ -14,7 +14,7 @@ namespace StarCraftCore.Scripts.Challenges
 				Plugin.PluginGuid,
 				"Planet Char",
 				"You're forced to survive on planet Char",
-				15,
+				5,
 				StarCraftCore.Utils.GetTextureFromPath("Artwork/Challenges/ascensionicon_char.png", Plugin.Directory),
 				StarCraftCore.Utils.GetTextureFromPath("Artwork/Challenges/ascensionicon_char_activated.png", Plugin.Directory)
 			);
