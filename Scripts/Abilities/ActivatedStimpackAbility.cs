@@ -6,10 +6,11 @@ using StarCraftCore.Scripts.Data.Sigils;
 
 namespace StarCraftCore.Scripts.Abilities
 {
-	public class StimpackAbility : ACustomActivatedAbility<StimpackAbility, StimpackAbilityData>
+	public class ActivatedStimpackAbility : ACustomActivatedAbility<ActivatedStimpackAbility, StimpackAbilityData>
 	{
 		public override Ability Ability => ability;
 		public static Ability ability = Ability.None;
+		
 		private CardModificationInfo tempMod;
 
 		public static void Initialize(Type declaringType)
@@ -17,9 +18,21 @@ namespace StarCraftCore.Scripts.Abilities
 			ability = InitializeBase(Plugin.PluginGuid, declaringType, Plugin.Directory);
 		}
 
+		public override bool RespondsToTurnEnd(bool playerTurnEnd)
+		{
+			return tempMod != null && Card.OpponentCard != playerTurnEnd;
+		}
+
+		public override IEnumerator OnTurnEnd(bool playerTurnEnd)
+		{
+			Card.TemporaryMods.Remove(tempMod);
+			tempMod = null;
+			yield return base.OnTurnEnd(playerTurnEnd);
+		}
+
 		public override bool CanActivate()
 		{
-			return Card.Health > LoadedData.damage;
+			return tempMod != null && Card.Health > LoadedData.damage;
 		}
 
 		public override IEnumerator Activate()

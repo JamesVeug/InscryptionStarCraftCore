@@ -5,8 +5,8 @@
     "priority": 0,
     "learnText": "The ultimate rush!",
     "ruleBookName": "Stimpack",
-    "ruleDescription": "Activate this sigil to deal 1 damage to the card but gain 2 damage for a single turn",
-    "iconPath": "Artwork/Sigils/stimpack.png",
+    "ruleDescription": "Activate this sigil to deal 1 damage to this card but gain 1 damage for a single turn.",
+    "iconPath": "Artwork/Sigils/activated_stimpack.png",
     "metaCategories": {
         "$id": 1,
         "$type": "1|System.Collections.Generic.List`1[[DiskCardGame.AbilityMetaCategory, Assembly-CSharp]], mscorlib",
@@ -17,5 +17,6 @@
         ]
     },
     "damage": 1,
-    "attackBoost": 2
+    "attackBoost": 1,
+    "boneCost": 2
 }

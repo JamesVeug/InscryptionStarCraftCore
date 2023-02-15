@@ -47,7 +47,7 @@ namespace StarCraftCore
             SwarmAbility.Initialize(typeof(SwarmAbility));
             MineralMiningAbility.Initialize(typeof(MineralMiningAbility));
             HealingAbility.Initialize(typeof(HealingAbility));
-            StimpackAbility.Initialize(typeof(StimpackAbility));
+            ActivatedStimpackAbility.Initialize(typeof(ActivatedStimpackAbility));
 
             // Dialogue Colors
             DialogueManager.AddColor(PluginGuid, "purple", new Color(0.3f, 0, 0.7f));
