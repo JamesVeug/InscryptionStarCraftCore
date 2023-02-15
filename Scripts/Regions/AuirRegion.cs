@@ -99,7 +99,7 @@ namespace StarCraftCore.Scripts.Regions
             trees.data.minScale = new Vector2(0.55f, 0.55f);
             trees.data.maxScale = new Vector2(0.75f, 0.75f);
             trees.data.prefabNames = ConvertNames(Trees);
-            trees.data.radius = 0.1f;
+            trees.data.radius = 0.15f;
             trees.data.perlinNoiseHeight = true;
 
             entries.Add(trees);
