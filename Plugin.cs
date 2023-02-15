@@ -59,10 +59,12 @@ namespace StarCraftCore
 	        // Regions
 	        AuirRegion.Initialize();
 	        CharRegion.Initialize();
+	        MarSaraRegion.Initialize();
 	        
 	        // Challenges
 	        AuirRegionOnlyChallenge.Initialize();
 	        CharRegionOnlyChallenge.Initialize();
+	        MarSaraRegionOnlyChallenge.Initialize();
 		        
 	        Logger.LogInfo($"Loaded {PluginName}!");
         }

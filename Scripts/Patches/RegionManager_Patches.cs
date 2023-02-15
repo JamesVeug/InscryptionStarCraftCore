@@ -23,6 +23,10 @@ namespace StarCraftCore.Scripts.Patches
             {
                 overrides.Add(AuirRegion.regionData);
             }
+            if (AscensionSaveData.Data.ChallengeIsActive(MarSaraRegionOnlyChallenge.Challenge.Challenge.challengeType))
+            {
+                overrides.Add(MarSaraRegion.regionData);
+            }
 
             if (overrides.Count > 0)
             {
