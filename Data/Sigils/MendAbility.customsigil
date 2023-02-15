@@ -1,0 +1,19 @@
+{
+    "$id": 0,
+    "$type": "0|StarCraftCore.Scripts.Data.Sigils.AbilityData, StarCraftCore",
+    "ruleBookName": "Mend",
+    "ruleDescription": "When a card bearing this sigil is played, a targeted card can restore 1 health.",
+    "power": 0,
+    "priority": 0,
+    "learnText": "A targeted healing... use it wisely.",
+    "iconPath": "Artwork/Sigils/mend.png",
+    "metaCategories": {
+        "$id": 1,
+        "$type": "1|System.Collections.Generic.List`1[[DiskCardGame.AbilityMetaCategory, Assembly-CSharp]], mscorlib",
+        "$rlength": 2,
+        "$rcontent": [
+            0,
+            1
+        ]
+    }
+}
