@@ -15,8 +15,8 @@ namespace StarCraftCore.Scripts.Challenges
 				"Planet Mar Sara",
 				"You're forced to survive on the desert planet Mar Sara",
 				5,
-				StarCraftCore.Utils.GetTextureFromPath("Artwork/Challenges/ascensionicon_char.png", Plugin.Directory),
-				StarCraftCore.Utils.GetTextureFromPath("Artwork/Challenges/ascensionicon_char_activated.png", Plugin.Directory)
+				StarCraftCore.Utils.GetTextureFromPath("Artwork/Challenges/ascensionicon_marsara.png", Plugin.Directory),
+				StarCraftCore.Utils.GetTextureFromPath("Artwork/Challenges/ascensionicon_marsara_activated.png", Plugin.Directory)
 			);
 		}
 	}
