@@ -20,7 +20,7 @@ namespace StarCraftCore.Scripts.Regions
         {
             RegionData wetLands = Resources.Load<RegionData>("data/map/regions/Wetlands");
 
-            regionData = RegionManager.New(RegionName, 0, true);
+            regionData = RegionManager.New(RegionName, 1, true);
             regionData.terrainCards = new List<CardInfo>()
             {
                 CardLoader.GetCardByName("StarCraftCore_JSON_Minerals")
