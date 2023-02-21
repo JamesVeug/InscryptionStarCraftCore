@@ -9,10 +9,10 @@ using StarCraftCore.Scripts.Regions;
 namespace StarCraftCore.Scripts.Patches
 {
     // Force region to always be char
-    [HarmonyPatch(typeof (RegionManager), "GetRandomRegionFromTier", typeof(int))]
-    public class RegionManager_GetRandomRegionFromTier
+    [HarmonyPatch(typeof (RegionManager), "GetAllRegionsForMapGeneration")]
+    public class RegionManager_GetAllRegionsForMapGeneration
     {
-        public static bool Prefix(int tier, ref RegionData __result)
+        public static bool Prefix(ref List<RegionData> __result)
         {
             List<RegionData> overrides = new List<RegionData>();
             if (AscensionSaveData.Data.ChallengeIsActive(CharRegionOnlyChallenge.Challenge.Challenge.challengeType))
@@ -28,18 +28,15 @@ namespace StarCraftCore.Scripts.Patches
                 overrides.Add(MarSaraRegion.regionData);
             }
 
-            if (overrides.Count > 0)
+            if (overrides.Count == 0)
             {
-                int randomseed = 0;
-                if (SaveManager.SaveFile != null && RunState.Run != null && (!SaveFile.IsAscension || AscensionSaveData.Data != null))
-                {
-                    randomseed = SaveManager.SaveFile.randomSeed + (SaveFile.IsAscension ? AscensionSaveData.Data.currentRunSeed : (SaveManager.SaveFile.pastRuns.Count * 1000)) + (RunState.Run.regionTier + 1) * 100;
-                }
-                __result = overrides[SeededRandom.Range(0, overrides.Count, randomseed)];
-                return false;
+                return true;
             }
 
-            return true;
+            overrides.Randomize();
+            __result = overrides;
+
+            return false;
         }
     }
 }
