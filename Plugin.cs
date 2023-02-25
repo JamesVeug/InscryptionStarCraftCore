@@ -12,6 +12,7 @@ namespace StarCraftCore
 {
     [BepInPlugin(PluginGuid, PluginName, PluginVersion)]
     [BepInDependency("cyantist.inscryption.api", BepInDependency.DependencyFlags.HardDependency)]
+    [BepInDependency("MADH.inscryption.JSONLoader", BepInDependency.DependencyFlags.HardDependency)]
     public class Plugin : BaseUnityPlugin
     {
 	    public const string PluginGuid = "jamesgames.inscryption.starcraftcore";
