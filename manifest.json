@@ -4,7 +4,7 @@
     "website_url": "",
     "description": "Adds common cards/abilities... etc used between StarCraft Mods",
     "dependencies": [
-        "BepInEx-BepInExPack_Inscryption-5.4.1902",
-        "API_dev-API-2.8.1"
+        "BepInEx-BepInExPack_Inscryption-5.4.1901",
+        "API_dev-API-2.10.0"
     ]
 }
