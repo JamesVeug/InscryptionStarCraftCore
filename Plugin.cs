@@ -53,21 +53,18 @@ namespace StarCraftCore
             // Dialogue Colors
             DialogueManager.AddColor(PluginGuid, "purple", new Color(0.3f, 0, 0.7f));
             DialogueManager.AddColor(PluginGuid, "light_green", new Color(0, 0.75f, 0));
-        }
-
-        private void Start()
-        {
-	        // Regions
-	        AuirRegion.Initialize();
-	        CharRegion.Initialize();
-	        MarSaraRegion.Initialize();
+            
+            // Regions
+            AuirRegion.Initialize();
+            CharRegion.Initialize();
+            MarSaraRegion.Initialize();
 	        
-	        // Challenges
-	        AuirRegionOnlyChallenge.Initialize();
-	        CharRegionOnlyChallenge.Initialize();
-	        MarSaraRegionOnlyChallenge.Initialize();
-		        
-	        Logger.LogInfo($"Loaded {PluginName}!");
+            // Challenges
+            AuirRegionOnlyChallenge.Initialize();
+            CharRegionOnlyChallenge.Initialize();
+            MarSaraRegionOnlyChallenge.Initialize();
+            
+            Logger.LogInfo($"Loaded {PluginName}!");
         }
     }
 }
