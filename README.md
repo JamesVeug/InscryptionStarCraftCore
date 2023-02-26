@@ -13,7 +13,7 @@ Adds common cards/abilities... etc used between StarCraft Mods
 </details>
 
 <details>
-<summary>15 New Sigils:
+<summary>17 New Sigils:
 </summary>
 
 |Name|Description|
@@ -27,33 +27,39 @@ Adds common cards/abilities... etc used between StarCraft Mods
 |Explode|When a card bearing this sigil attacks, the damage is also applied to the creatures adjacent to the target. This creature then perishes.|
 |Fish Hook|Whenever a card bearing this sigil is played, you may hook an opposing creature to your side of the board, if there is room.|
 |Healing|At the start of your turn the card bearing this sigil will heal adjacent cards by one health.|
+|Mend|When a card bearing this sigil is played, a targeted card can restore 1 health.|
 |Mineral Mining|When a card being this sigil is attacked, the attacker generates 1 bone.|
 |Regenerate|At the start of your turn, a creature bearing this sigil will heal one health.|
 |Ricochet|When a card bearing this sigil deals damage to a creature, it will also deal 1 flying damage.|
 |Splash Damage|Whenever a card bearing this sigil attacks, the damage will also apply to the creatures adjacent to the target.|
+|Stimpack|Activate this sigil to deal 1 damage to the card but gain 2 damage for a single turn|
 |Swarm|When an card adjacent to a card bearing this sigil attacks another card and survives, this card will also attack the same card.|
 |Trinket Within|When a card bearing this sigil perishes, a random item is given to you.|
 </details>
 
 <details>
-<summary>2 New Ascension Challenges:
+<summary>3 New Ascension Challenges:
 </summary>
 
 |Name|Points|Description|
 |:-|:-|:-|
-|My life for Auir|15|You're sent to Auir to defeat all bosses.|
-|Planet Char|15|You're forced to survive on planet Char|
+|My life for Auir|5|You're sent to Auir to defeat all bosses.|
+|Planet Char|5|You're forced to survive on planet Char|
+|Planet Mar Sara|5|You're forced to survive on the desert planet Mar Sara|
 </details>
 
 <details>
-<summary>2 New Regions:
+<summary>3 New Regions:
 </summary>
 
 |Name|Tier|Main Tribes|Opponents|Encounters|
 |:-|:-|:-|:-|:-|
-|Auir|0|Bird|ProspectorBoss,AnglerBoss,TrapperTraderBoss|BirdFlock,CoyotePack,WolfPack,PronghornJuggernaut,DireWolfJuggernaut,Protoss Dark Templar,Protoss Zealot Rush|
-|Char|0|Insect|ProspectorBoss,AnglerBoss,TrapperTraderBoss|Skinks,AntSwarm,Submerge,Bees,Reptiles,AntsAndTurtles,Zerg Air,Drone Rush,Swarm Host snipe,Ultralisk Rush,Zergling Swarm|
+|Auir|0|Bird|ProspectorBoss,AnglerBoss,TrapperTraderBoss,Abathur|BirdFlock,CoyotePack,WolfPack,PronghornJuggernaut,DireWolfJuggernaut,Protoss Dark Templar,Protoss Zealot Rush|
+|Char|1|Insect|ProspectorBoss,AnglerBoss,TrapperTraderBoss,Abathur|Skinks,AntSwarm,Submerge,Bees,Reptiles,AntsAndTurtles,Zerg Air,Drone Rush,Swarm Host snipe,Ultralisk Rush,Zergling Swarm|
+|MarSara|2|Canine|ProspectorBoss,AnglerBoss,TrapperTraderBoss,Abathur|Skinks,AntSwarm,Submerge,Bees,Reptiles,AntsAndTurtles,Terran Air,Terran Marine Drop,Terran Mech,Terran Reaper Rush,Terran Widow Mines|
 </details>
+
+
 
 
 
@@ -62,11 +68,21 @@ Adds common cards/abilities... etc used between StarCraft Mods
 - **JamesGames** - Creator
 - **GeneralSpritz** - Custom Art
 - **Shattered Omega** - Balancing
+- **Bonie** - Some props for the Auir and Mar Sara regions
 - **Cyantist** - Armored Ability
 - **CarbotAnimations** - Original Cartoon art for StarCraft - https://www.youtube.com/c/CarbotAnimations
-- **Bonie** - Some props for Auir
 
 # Update notes:
+
+## `Version: 1.4.0 - 26/02/2023`
+### Added:
+- Added Mend sigil from Zerg mod
+- Added Stimpack
+- Added Mar Sara region
+- Added challenge to only fight on Mar Sara
+
+<details>
+  <summary>See all Changes</summary>
 
 ## `Version: 1.3.1 - 12/01/2023`
 ### Fixes:
@@ -75,9 +91,6 @@ Adds common cards/abilities... etc used between StarCraft Mods
 ## `Version: 1.3.0 - 12/01/2023`
 ### Added:
 - Added Healing Sigil
-
-<details>
-  <summary>See all Changes</summary>
 
 ## `Version: 1.2.0 - 04/01/2023`
 ### Changes:

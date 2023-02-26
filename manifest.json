@@ -1,8 +1,8 @@
 {
     "name": "StarCraftCore",
-    "version_number": "1.3.1",
+    "version_number": "1.4.0",
     "website_url": "",
-    "description": "Adds common cards/abilities... etc used between StarCraft Mods",
+    "description": "Adds new regions and also new sigils for the Zerg, Terran and Protoss Mods",
     "dependencies": [
         "BepInEx-BepInExPack_Inscryption-5.4.1901",
         "API_dev-API-2.10.0"

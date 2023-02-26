@@ -1,3 +1,4 @@
+using System;
 using BepInEx;
 using BepInEx.Logging;
 using HarmonyLib;
@@ -12,12 +13,11 @@ namespace StarCraftCore
 {
     [BepInPlugin(PluginGuid, PluginName, PluginVersion)]
     [BepInDependency("cyantist.inscryption.api", BepInDependency.DependencyFlags.HardDependency)]
-    [BepInDependency("MADH.inscryption.JSONLoader", BepInDependency.DependencyFlags.HardDependency)]
     public class Plugin : BaseUnityPlugin
     {
 	    public const string PluginGuid = "jamesgames.inscryption.starcraftcore";
 	    public const string PluginName = "StarCraft Core";
-	    public const string PluginVersion = "1.3.1.0";
+	    public const string PluginVersion = "1.4.0.0";
 
         public static string Directory;
         public static ManualLogSource Log;
@@ -54,18 +54,21 @@ namespace StarCraftCore
             // Dialogue Colors
             DialogueManager.AddColor(PluginGuid, "purple", new Color(0.3f, 0, 0.7f));
             DialogueManager.AddColor(PluginGuid, "light_green", new Color(0, 0.75f, 0));
-            
-            // Regions
-            AuirRegion.Initialize();
-            CharRegion.Initialize();
-            MarSaraRegion.Initialize();
+        }
+
+        private void Start()
+        {
+	        // Regions
+	        AuirRegion.Initialize();
+	        CharRegion.Initialize();
+	        MarSaraRegion.Initialize();
 	        
-            // Challenges
-            AuirRegionOnlyChallenge.Initialize();
-            CharRegionOnlyChallenge.Initialize();
-            MarSaraRegionOnlyChallenge.Initialize();
-            
-            Logger.LogInfo($"Loaded {PluginName}!");
+	        // Challenges
+	        AuirRegionOnlyChallenge.Initialize();
+	        CharRegionOnlyChallenge.Initialize();
+	        MarSaraRegionOnlyChallenge.Initialize();
+		        
+	        Logger.LogInfo($"Loaded {PluginName}!");
         }
     }
 }
